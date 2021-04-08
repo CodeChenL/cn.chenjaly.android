@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Button btn=(Button)findViewById(R.id.btn1);
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Toast.makeText(MainActivity.this,"按钮1被点击了",Toast.LENGTH_LONG).show();
+            setContentView(R.layout.activity__rmb);
         }
     }
 }
