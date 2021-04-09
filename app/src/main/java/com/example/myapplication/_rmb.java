@@ -20,6 +20,20 @@ public class _rmb extends AppCompatActivity {
         Button button=(Button)findViewById(R.id.btn_rmb);
         EditText editText=(EditText)findViewById(R.id.edit_rmb);
         TextView textView=(TextView)findViewById(R.id.text_rmb);
-        System.out.println("HHHHHHHHHHHHHHHHHH"+button.getText());
+        Button button_qk=(Button)findViewById(R.id.btn_rmb_qk);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Rmb rmb=new Rmb();
+                rmb.setRmb(editText.getText().toString());
+                textView.setText(rmb.getRmb());
+            }
+        });
+        button_qk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setText(null);
+            }
+        });
     }
 }
