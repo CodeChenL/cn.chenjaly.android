@@ -19,8 +19,6 @@ public class MainActivity12 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main12);
         RadioGroup radioGroup=(RadioGroup)findViewById(R.id.rgSex);
-        RadioButton radioButtonN=(RadioButton)findViewById(R.id.n);
-        RadioButton radioButtonV=(RadioButton)findViewById(R.id.v);
         Button button=(Button)findViewById(R.id.js);
         Intent intent=new Intent(MainActivity12.this,MainActivity13.class);
         Bundle bundle= new Bundle();
