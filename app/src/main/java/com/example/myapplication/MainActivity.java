@@ -47,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn5=(Button)findViewById(R.id.btn5);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,Dome14_BCR.class);
+                startActivity(intent);
+            }
+        });
     }
     class MyListener implements View.OnClickListener{
         @Override
