@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-public class Rmb {
+public class Rmb_zh {
 
     private String [] a = {"零","壹","贰","叁","肆","伍","陆","柒","捌","玖"};
     private String [] b = {"","角","毫","厘",""};

@@ -65,11 +65,10 @@ public class Dome14_BCR extends AppCompatActivity {
                     unregisterReceiver(innerReceiver);
                     registerornot=false;
                     Toast.makeText(this,"广播已注销",Toast.LENGTH_SHORT).show();
-                    return;
                 }else {
                     Toast.makeText(this,"广播尚未注册",Toast.LENGTH_SHORT).show();
-                    return;
                 }
+                break;
             case R.id.btToRed:
                 Intent toRed=new Intent("toRed");
                 sendBroadcast(toRed);

@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button btn4=(Button)findViewById(R.id.btn4);
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,MainActivity12.class);
@@ -48,10 +46,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button btn5=(Button)findViewById(R.id.btn5);
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,Dome14_BCR.class);
+                startActivity(intent);
+            }
+        });
+        Button btn6=(Button)findViewById(R.id.btn5);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,MainActivity14.class);
                 startActivity(intent);
             }
         });
@@ -59,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
     class MyListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(MainActivity.this,_rmb.class);
+            Intent intent=new Intent(MainActivity.this, rmb.class);
             startActivity(intent);
-            Toast.makeText(MainActivity.this,"账号密码错误",Toast.LENGTH_LONG).show();
         }
     }
 }
