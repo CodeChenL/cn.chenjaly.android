@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activity_main">
 
     <!--这个id就是用来给java代码或者这个组件标识
         @指的是R文件对象 +id  就是往里面添加一个id编号

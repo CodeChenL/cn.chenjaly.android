@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class activity_main extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, report_view.class);
+                Intent intent=new Intent(activity_main.this, report_view.class);
                 startActivity(intent);
             }
         });
@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, login1.class);
+                Intent intent=new Intent(activity_main.this, login1.class);
                 Bundle bundle= new Bundle();
                 bundle.putString("demo","数据");
                 intent.putExtras(bundle);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this,"按钮2被点击了",Toast.LENGTH_LONG).show();
+                Toast.makeText(activity_main.this,"按钮2被点击了",Toast.LENGTH_LONG).show();
             }
         });
         Button btn3=(Button)findViewById(R.id.btn3);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, login.class);
+                Intent intent=new Intent(activity_main.this, login.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, bmi.class);
+                Intent intent=new Intent(activity_main.this, bmi.class);
                 startActivity(intent);
             }
         });
@@ -55,15 +55,23 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, receiver.class);
+                Intent intent=new Intent(activity_main.this, receiver.class);
                 startActivity(intent);
             }
         });
-        Button btn6=(Button)findViewById(R.id.btn5);
+        Button btn6=(Button)findViewById(R.id.btn6);
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, read_xml.class);
+                Intent intent=new Intent(activity_main.this, read_xml.class);
+                startActivity(intent);
+            }
+        });
+        Button btn7=(Button)findViewById(R.id.btn7);
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity_main.this, io.class);
                 startActivity(intent);
             }
         });

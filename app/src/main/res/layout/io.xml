@@ -1,9 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Io">
+    tools:context=".io">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="读取内存中的文件"/>
+
+        <TableLayout
+            android:layout_below="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_margin="10dp">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_write1"
+                    android:text="写入"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_read1"
+                    android:text="读取"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_top"
+        android:id="@+id/layout_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="读取SD卡中的文件"/>
+
+        <TableLayout
+            android:layout_below="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_margin="10dp">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_write2"
+                    android:text="写入"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_read2"
+                    android:text="读取"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <!--预留一块区域用来存放图片-->
+    <ImageView
+        android:id="@+id/iv_sd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_second"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="退出"/>
+
+</RelativeLayout>

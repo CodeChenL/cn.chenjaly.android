@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Io"></activity>
+        <activity android:name=".io"></activity>
         <activity android:name=".read_xml" />
         <activity android:name=".receiver" />
         <activity android:name=".bmi1" />
@@ -25,7 +25,7 @@
             android:label="@string/title_activity_main3"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity android:name=".report_view" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
