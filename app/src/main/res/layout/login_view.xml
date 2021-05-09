@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical|center_horizontal"
-    tools:context=".MainActivity5">
+    tools:context=".center_view1">
 
     <TableLayout
         android:layout_width="wrap_content"

@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity7 extends AppCompatActivity {
+public class onclick1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main7);
+        setContentView(R.layout.onclick1);
         //首先 获取页面的按钮
         Button btn = (Button) findViewById(R.id.btn);
         //设置按钮的监听器
@@ -21,7 +21,7 @@ public class MainActivity7 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //context 跟text只是这个makeText这个方法上面的参数名称而已 idea 特有的提示
-                Toast.makeText(MainActivity7.this,"按钮被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick1.this,"按钮被点击了",Toast.LENGTH_SHORT).show();
             }
         });
     }

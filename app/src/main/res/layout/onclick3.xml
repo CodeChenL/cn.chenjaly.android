@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".background_view">
 
     <!--android:onClick="onClick"是用来 设置按钮被点击后触发的点击方法的-->
     <Button

@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class MainActivity11 extends AppCompatActivity {
+public class login1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main11);
+        setContentView(R.layout.login1);
         TextView textView=(TextView) findViewById(R.id.test);
         Intent intent=this.getIntent();
         Bundle bundle=intent.getExtras();

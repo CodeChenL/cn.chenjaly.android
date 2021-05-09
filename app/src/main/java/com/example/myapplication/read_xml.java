@@ -9,10 +9,13 @@ import android.util.Xml;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myapplication.bean.Product;
+import com.example.myapplication.bean.XML2Porduct;
+
 import java.io.InputStream;
 import java.util.List;
 
-public class MainActivity14 extends AppCompatActivity implements View.OnClickListener{
+public class read_xml extends AppCompatActivity implements View.OnClickListener{
 
     Button btnShowXML;
 
@@ -27,7 +30,7 @@ public class MainActivity14 extends AppCompatActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main14);
+        setContentView(R.layout.read_xml);
         initView();
         initListener();
     }

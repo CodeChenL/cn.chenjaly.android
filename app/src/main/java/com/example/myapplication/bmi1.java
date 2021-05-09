@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity13 extends AppCompatActivity {
+public class bmi1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main13);
+        setContentView(R.layout.bmi1);
         TextView textViewSex=(TextView)findViewById(R.id.sex);
         TextView textViewSg=(TextView)findViewById(R.id.h);
         TextView textViewTz=(TextView)findViewById(R.id.w);
@@ -26,7 +26,7 @@ public class MainActivity13 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent(MainActivity13.this,MainActivity12.class);
+                Intent intent1=new Intent(bmi1.this, bmi.class);
                 startActivity(intent1);
             }
         });

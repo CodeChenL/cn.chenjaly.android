@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.bean;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;

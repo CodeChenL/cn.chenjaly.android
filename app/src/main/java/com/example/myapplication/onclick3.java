@@ -6,13 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity9 extends AppCompatActivity {
+public class onclick3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //这里这个句子的意思就是 绑定到 activity_main3.xml这个文件中
-        setContentView(R.layout.activity_main9);
+        setContentView(R.layout.onclick3);
     }
 
     //因为  xml页面设置了 onClick属性 就不用 去再编写监听器 直接在这里定义点击方法就得了
@@ -21,10 +21,10 @@ public class MainActivity9 extends AppCompatActivity {
         switch (v.getId()){
             //如果说是button1被点击了
             case R.id.button1:
-                Toast.makeText(MainActivity9.this,"按钮1被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick3.this,"按钮1被点击了",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button2:
-                Toast.makeText(MainActivity9.this,"按钮2被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick3.this,"按钮2被点击了",Toast.LENGTH_SHORT).show();
                 break;
         }
     }

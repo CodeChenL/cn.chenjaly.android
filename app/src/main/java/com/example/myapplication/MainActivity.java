@@ -13,15 +13,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
         Button btn1=(Button)findViewById(R.id.btn1);
         System.out.println(btn1.getText());
-        btn1.setOnClickListener(new MyListener());
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, report_view.class);
+                startActivity(intent);
+            }
+        });
         Button btn2=(Button)findViewById(R.id.btn2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,MainActivity11.class);
+                Intent intent=new Intent(MainActivity.this, login1.class);
                 Bundle bundle= new Bundle();
                 bundle.putString("demo","数据");
                 intent.putExtras(bundle);
@@ -33,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,MainActivity10.class);
+                Intent intent=new Intent(MainActivity.this, login.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,MainActivity12.class);
+                Intent intent=new Intent(MainActivity.this, bmi.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,Dome14_BCR.class);
+                Intent intent=new Intent(MainActivity.this, receiver.class);
                 startActivity(intent);
             }
         });
@@ -57,16 +63,9 @@ public class MainActivity extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,MainActivity14.class);
+                Intent intent=new Intent(MainActivity.this, read_xml.class);
                 startActivity(intent);
             }
         });
-    }
-    class MyListener implements View.OnClickListener{
-        @Override
-        public void onClick(View v) {
-            Intent intent=new Intent(MainActivity.this, rmb.class);
-            startActivity(intent);
-        }
     }
 }

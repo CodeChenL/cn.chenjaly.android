@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.bean;
 
 public class Product {
     private String id;

@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Dome14_BCR extends AppCompatActivity {
+public class receiver extends AppCompatActivity {
 
     private TextView tvDisPlay;
     InnerReceiver innerReceiver;
@@ -39,7 +39,7 @@ public class Dome14_BCR extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dome14__b_c_r);
+        setContentView(R.layout.receiver);
         tvDisPlay=findViewById(R.id.tvDisplay);
         innerReceiver =new InnerReceiver();
         intentFilter=new IntentFilter();

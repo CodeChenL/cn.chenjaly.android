@@ -9,21 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity14"></activity>
-        <activity android:name=".Dome14_BCR" />
-        <activity android:name=".MainActivity13" />
-        <activity android:name=".MainActivity12" />
-        <activity android:name=".MainActivity11" />
-        <activity android:name=".MainActivity10" />
+        <activity android:name=".Io"></activity>
+        <activity android:name=".read_xml" />
+        <activity android:name=".receiver" />
+        <activity android:name=".bmi1" />
+        <activity android:name=".bmi" />
+        <activity android:name=".login1" />
+        <activity android:name=".login" />
         <activity android:name=".rmb" />
-        <activity android:name=".MainActivity6" />
-        <activity android:name=".MainActivity5" />
-        <activity android:name=".MainActivity4" />
+        <activity android:name=".login_view" />
+        <activity android:name=".center_view1" />
+        <activity android:name=".center_view" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".background_view"
             android:label="@string/title_activity_main3"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".report_view" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

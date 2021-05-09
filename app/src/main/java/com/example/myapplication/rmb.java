@@ -8,12 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.myapplication.bean.Rmb_zh;
+
 public class rmb extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__rmb);
+        setContentView(R.layout.rmb);
         Button button=(Button)findViewById(R.id.btn_rmb);
         EditText editText=(EditText)findViewById(R.id.edit_rmb);
         TextView textView=(TextView)findViewById(R.id.text_rmb);

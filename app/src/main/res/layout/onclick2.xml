@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".report_view">
 
     <!--
         即使你在不同的页面 这个id编号也是不能够重复 这个id名称不能存在一样
