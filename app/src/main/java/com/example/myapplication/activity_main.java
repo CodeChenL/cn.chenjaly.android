@@ -71,7 +71,7 @@ public class activity_main extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(activity_main.this, io.class);
+                Intent intent=new Intent(activity_main.this, io_input.class);
                 startActivity(intent);
             }
         });
