@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import com.example.myapplication.sqlite.sqliteMain;
 
 public class activity_main extends AppCompatActivity {
 
@@ -72,6 +73,14 @@ public class activity_main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(activity_main.this, io_input.class);
+                startActivity(intent);
+            }
+        });
+        Button btn8=(Button)findViewById(R.id.btn8);
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(activity_main.this, sqliteMain.class);
                 startActivity(intent);
             }
         });
