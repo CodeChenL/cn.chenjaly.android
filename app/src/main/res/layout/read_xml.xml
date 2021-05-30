@@ -12,5 +12,5 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/btnShowXML"
         android:text="读取xml"
-        android:onClick="onClick"/>
+        android:onClick="onClick" />
 </RelativeLayout>

@@ -16,14 +16,14 @@ public class rmb extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rmb);
-        Button button=(Button)findViewById(R.id.btn_rmb);
-        EditText editText=(EditText)findViewById(R.id.edit_rmb);
-        TextView textView=(TextView)findViewById(R.id.text_rmb);
-        Button button_qk=(Button)findViewById(R.id.btn_rmb_qk);
+        Button button = (Button) findViewById(R.id.btn_rmb);
+        EditText editText = (EditText) findViewById(R.id.edit_rmb);
+        TextView textView = (TextView) findViewById(R.id.text_rmb);
+        Button button_qk = (Button) findViewById(R.id.btn_rmb_qk);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Rmb_zh rmb=new Rmb_zh();
+                Rmb_zh rmb = new Rmb_zh();
                 rmb.setRmb(editText.getText().toString());
                 textView.setText(rmb.getRmb());
             }

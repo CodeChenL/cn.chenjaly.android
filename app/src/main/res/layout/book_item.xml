@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--图书信息-->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <!--编号-->
+        <TableRow>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center|right"
+                android:text="编号"/>
+
+            <TextView
+                android:id="@+id/book_item_id"
+                android:layout_margin="10dp"
+                android:gravity="center|left"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center|right"
+                android:text="书名"/>
+
+            <TextView
+                android:id="@+id/book_item_bookname"
+                android:layout_margin="10dp"
+                android:gravity="center|left"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center|right"
+                android:text="作者"/>
+
+            <TextView
+                android:id="@+id/book_item_writer"
+                android:layout_margin="10dp"
+                android:gravity="center|left"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center|right"
+                android:text="出版社"/>
+
+            <TextView
+                android:id="@+id/book_item_press"
+                android:layout_margin="10dp"
+                android:gravity="center|left"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:gravity="center|right"
+                android:text="价格"/>
+
+            <TextView
+                android:id="@+id/book_item_price"
+                android:layout_margin="10dp"
+                android:gravity="center|left"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

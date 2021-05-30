@@ -12,9 +12,9 @@ public class login1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login1);
-        TextView textView=(TextView) findViewById(R.id.test);
-        Intent intent=this.getIntent();
-        Bundle bundle=intent.getExtras();
+        TextView textView = (TextView) findViewById(R.id.test);
+        Intent intent = this.getIntent();
+        Bundle bundle = intent.getExtras();
         textView.setText(bundle.getString("登录信息"));
     }
 }

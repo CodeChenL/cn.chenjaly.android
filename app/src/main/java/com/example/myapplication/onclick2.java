@@ -15,7 +15,7 @@ public class onclick2 extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.onclick2);
         //首先要获取这个被点击的按钮
-        Button btn2 = (Button)findViewById(R.id.btn2);
+        Button btn2 = (Button) findViewById(R.id.btn2);
         //这里这个this指的是 当前类的对象 MainActivity2 因为它继承了View.OnClickListener接口
         btn2.setOnClickListener(this);
     }
@@ -23,6 +23,6 @@ public class onclick2 extends AppCompatActivity implements View.OnClickListener 
     //重写onClick 方法处理点击事件
     @Override
     public void onClick(View v) {
-        Toast.makeText(onclick2.this,"按钮2被点击了",Toast.LENGTH_SHORT).show();
+        Toast.makeText(onclick2.this, "按钮2被点击了", Toast.LENGTH_SHORT).show();
     }
 }

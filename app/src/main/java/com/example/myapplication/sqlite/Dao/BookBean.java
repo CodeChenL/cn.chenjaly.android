@@ -1,4 +1,4 @@
-package com.example.myapplication.sqlite;
+package com.example.myapplication.sqlite.Dao;
 
 public class BookBean {
     // 常量

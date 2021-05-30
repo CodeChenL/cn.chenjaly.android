@@ -15,7 +15,7 @@ import com.example.myapplication.bean.XML2Porduct;
 import java.io.InputStream;
 import java.util.List;
 
-public class read_xml extends AppCompatActivity implements View.OnClickListener{
+public class read_xml extends AppCompatActivity implements View.OnClickListener {
 
     Button btnShowXML;
 
@@ -34,8 +34,9 @@ public class read_xml extends AppCompatActivity implements View.OnClickListener{
         initView();
         initListener();
     }
+
     @Override
-    public void onClick(View v){
+    public void onClick(View v) {
         if (v.getId() == R.id.btnShowXML) {
             Log.v("msg", "按钮被点击了");
             InputStream is = getResources().openRawResource(R.raw.products);

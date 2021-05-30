@@ -16,15 +16,15 @@ public class onclick3 extends AppCompatActivity {
     }
 
     //因为  xml页面设置了 onClick属性 就不用 去再编写监听器 直接在这里定义点击方法就得了
-    public void onClick(View v){
+    public void onClick(View v) {
         //View v这个形式参数就表示的是触发了这个点击事件的按钮
-        switch (v.getId()){
+        switch (v.getId()) {
             //如果说是button1被点击了
             case R.id.button1:
-                Toast.makeText(onclick3.this,"按钮1被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick3.this, "按钮1被点击了", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.button2:
-                Toast.makeText(onclick3.this,"按钮2被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick3.this, "按钮2被点击了", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

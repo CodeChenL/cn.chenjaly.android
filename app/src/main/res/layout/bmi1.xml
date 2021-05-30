@@ -6,28 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".bmi1"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/sex"
         android:text="您是什么东西"
-        android:textSize="40dp"/>
+        android:textSize="40dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40dp"
         android:id="@+id/h"
-        android:text="您是哥布林"/>
+        android:text="您是哥布林" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="您是猪吧"
         android:textSize="40dp"
-        android:id="@+id/w"/>
+        android:id="@+id/w" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="返回"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/back"/>
+        android:id="@+id/back" />
 </LinearLayout>

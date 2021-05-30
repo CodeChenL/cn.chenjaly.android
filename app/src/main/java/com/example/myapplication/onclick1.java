@@ -21,7 +21,7 @@ public class onclick1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //context 跟text只是这个makeText这个方法上面的参数名称而已 idea 特有的提示
-                Toast.makeText(onclick1.this,"按钮被点击了",Toast.LENGTH_SHORT).show();
+                Toast.makeText(onclick1.this, "按钮被点击了", Toast.LENGTH_SHORT).show();
             }
         });
     }

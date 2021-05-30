@@ -11,48 +11,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn1"
-        android:text="按钮1"/>
+        android:text="按钮1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn2"
-        android:text="按钮2"/>
+        android:text="按钮2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn3"
-        android:text="按钮3"/>
+        android:text="按钮3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn4"
-        android:text="按钮4"/>
+        android:text="按钮4" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn5"
-        android:text="按钮5"/>
+        android:text="按钮5" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn6"
-        android:text="按钮6"/>
+        android:text="按钮6" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn7"
-        android:text="按钮7"/>
+        android:text="按钮7" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn8"
-        android:text="按钮8"/>
+        android:text="按钮8" />
 
 </LinearLayout>
