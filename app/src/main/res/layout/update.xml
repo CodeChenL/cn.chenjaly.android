@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/update_item_ly"
+    android:background="#ffffffff"
+    tools:context=".sqlite.update">
+
+    <TableLayout
+        android:id="@+id/upd_tbly_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_gravity="center|right"
+                android:text="书名"/>
+
+            <EditText
+                android:id="@+id/upd_ite_et_bookname"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
+                android:inputType="text"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_gravity="center|right"
+                android:text="作者"/>
+
+            <EditText
+                android:id="@+id/upd_iem_et_writer"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
+                android:inputType="text"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_gravity="center|right"
+                android:text="出版社"/>
+
+            <EditText
+                android:id="@+id/upd_iem_et_press"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
+                android:inputType="text"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_gravity="center|right"
+                android:text="价格"/>
+
+            <EditText
+                android:id="@+id/upd_iem_et_price"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
+                android:inputType="text"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upd_tbly_top"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/upd_btn_ok"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:text="确定"/>
+
+            <Button
+                android:id="@+id/upd_btn_cancel"
+                android:layout_width="100dp"
+                android:layout_margin="5dp"
+                android:text="取消"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

@@ -124,7 +124,7 @@ public class result extends AppCompatActivity implements View.OnClickListener {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 //弹出activity修改 传递id编号
-                                Intent intent = new Intent(result.this, UpdateActivity.class);
+                                Intent intent = new Intent(result.this, update.class);
                                 Bundle bundle = new Bundle();
                                 bundle.putString(BookBean.FILED_ID,idData);
                                 bundle.putString(BookBean.FILED_BOOKNAME,map.get(BookBean.FILED_BOOKNAME).toString());
