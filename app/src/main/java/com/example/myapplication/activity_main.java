@@ -101,5 +101,13 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn11 = (Button) findViewById(R.id.btn11);
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, imageSwitcher.class);
+                startActivity(intent);
+            }
+        });
     }
 }

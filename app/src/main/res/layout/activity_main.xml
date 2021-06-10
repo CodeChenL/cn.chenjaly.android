@@ -66,4 +66,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn10"
         android:text="按钮10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn11"
+        android:text="按钮11" />
 </LinearLayout>
