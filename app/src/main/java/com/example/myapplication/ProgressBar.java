@@ -8,14 +8,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-public class load extends AppCompatActivity {
+public class ProgressBar extends AppCompatActivity {
 
     //首先 定义4个成员变量
-    private ProgressBar horizonP;       //水平方向进度条
-    private ProgressBar circleP;        //圆形进度条
+    private android.widget.ProgressBar horizonP;       //水平方向进度条
+    private android.widget.ProgressBar circleP;        //圆形进度条
     private int mProgressStatus = 0;    //设置进度条的默认的状态
     private Handler mHandle;            //用来处理进度条完成状态的信息的处理器对象
 
@@ -23,7 +22,7 @@ public class load extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.load);
+        setContentView(R.layout.progress_bar);
         //分别获取水平方向进度条 跟 圆形进度条
         horizonP = findViewById(R.id.progressBar1);
         circleP = findViewById(R.id.progressBar2);
@@ -40,7 +39,7 @@ public class load extends AppCompatActivity {
                     //进度条没有满 那么我们就调用setProgress方法 去更新进度条的显示状态
                     horizonP.setProgress(mProgressStatus);
                 }else{
-                    Toast.makeText(load.this,"耗时操作完成",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProgressBar.this,"耗时操作完成",Toast.LENGTH_SHORT).show();
                     //进度条加载完成后在页面消失
                     horizonP.setVisibility(View.GONE);
                     circleP.setVisibility(View.GONE);

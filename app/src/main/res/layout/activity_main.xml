@@ -61,4 +61,9 @@
         android:id="@+id/btn9"
         android:text="按钮9" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn10"
+        android:text="按钮10" />
 </LinearLayout>

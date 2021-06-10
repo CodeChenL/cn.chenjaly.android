@@ -89,7 +89,15 @@ public class activity_main extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_main.this, load.class);
+                Intent intent = new Intent(activity_main.this, ProgressBar.class);
+                startActivity(intent);
+            }
+        });
+        Button btn10 = (Button) findViewById(R.id.btn10);
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, ratingBar.class);
                 startActivity(intent);
             }
         });

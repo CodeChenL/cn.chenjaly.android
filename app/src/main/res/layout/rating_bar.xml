@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ratingBar">
+
+    <!--
+        星级评分条RatingBar
+            android:numStars用来设置星星的个数 默认值是5个
+            android:isIndicator是否可以改变星星的显示的个数 默认值是false
+                               如果他的值为true的话 用户就不可以改变星星的显示情况
+            android:rating  设置默认显示多少颗星星 默认值是0
+            android:stepSize  设置每次滑动的是时候可以 改变多少颗星星 默认是半个
+    -->
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="8"
+        android:isIndicator="false"
+        android:rating="5"
+        android:stepSize="0.25"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+</LinearLayout>
