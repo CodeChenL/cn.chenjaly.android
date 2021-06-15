@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gallery">
+
+    <!--画廊视图
+        unselectedAlpha设置未选中的图片的透明度
+        spacing 设置图片与图片直接的距离
+    -->
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:unselectedAlpha="0.6"
+        android:spacing="5px"/>
+</LinearLayout>

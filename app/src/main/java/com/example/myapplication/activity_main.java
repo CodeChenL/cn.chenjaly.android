@@ -109,5 +109,13 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn12 = (Button) findViewById(R.id.btn12);
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, gallery.class);
+                startActivity(intent);
+            }
+        });
     }
 }
