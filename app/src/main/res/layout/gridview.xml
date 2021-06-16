@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gridview">
+
+    <!--画廊网格视图
+        horizontalSpacing图片与图片之间的举例
+        numColumns每一行显示的图片的数量
+        horizontalSpacing 一行中图片 之间的间隔距离
+        verticalSpacing  上下两张图片之间的距离
+    -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="640px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10px"
+        android:horizontalSpacing="3px"
+        android:numColumns="4"
+        android:verticalSpacing="3px"/>
+
+    <!--图像切换器-->
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30px"/>
+
+</LinearLayout>

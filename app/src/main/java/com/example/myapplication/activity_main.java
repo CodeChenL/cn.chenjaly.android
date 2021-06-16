@@ -117,5 +117,13 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn13 = (Button) findViewById(R.id.btn13);
+        btn13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, gridview.class);
+                startActivity(intent);
+            }
+        });
     }
 }
