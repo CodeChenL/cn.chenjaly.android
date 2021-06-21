@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".gridview"></activity>
+        <activity android:name=".listview2"></activity>
+        <activity android:name=".listview" />
+        <activity android:name=".gridview" />
         <activity android:name=".gallery" />
         <activity android:name=".imageSwitcher" />
         <activity android:name=".ratingBar" />

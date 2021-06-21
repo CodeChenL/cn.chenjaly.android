@@ -84,4 +84,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn13"
         android:text="按钮13" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn14"
+        android:text="按钮14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn15"
+        android:text="按钮15" />
 </LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listview">
+
+    <!--列表视图
+        dividerHeight 分隔条的高度（粗细）
+        footerDividersEnabled  设置列表视图底部是否显示分隔条
+        headerDividersEnabled  设置列表视图顶部是否显示分隔条
+        divider  设置分隔条的样式 这个分隔条既可以是颜色也可以是图片
+    -->
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="3dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:divider="@drawable/ic_launcher_background"
+        />
+
+</LinearLayout>

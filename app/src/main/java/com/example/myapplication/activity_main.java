@@ -125,5 +125,21 @@ public class activity_main extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn14 = (Button) findViewById(R.id.btn14);
+        btn14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, listview.class);
+                startActivity(intent);
+            }
+        });
+        Button btn15 = (Button) findViewById(R.id.btn15);
+        btn15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(activity_main.this, listview2.class);
+                startActivity(intent);
+            }
+        });
     }
 }
